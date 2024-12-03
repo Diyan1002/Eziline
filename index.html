@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Background</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="video-container">
+    <div class="animated-text-container">
+      <h1 class="animated-text">EZIHOST</h1>
+    </div>
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+        <source src="videos/0_Earth_Planet_1280x720 (2).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  
+  <div class="animated-image">
+    <img src="images/award-pic-1-150x150.png" alt="Award Image">
+  </div>
+  <header>
+    <div class="header-top">
+      <p class="p1">📍 Office 304-B Amna Plaza Near Radio Pakistan Peshawar Road Rawalpindi</p>
+      <p class="p2">📞 +923212225212 ✉ info@eziline.com</p>
+    </div>
+    <div class="header-main">
+      <img src="images/logo.png" alt="Eziline Logo" class="logo">
+    
+      <!-- Menu toggle button (hamburger icon) -->
+      <button class="menu-toggle" onclick="toggleMenu()">
+        ☰ <!-- Unicode for a simple hamburger menu -->
+      </button>
+    
+      <!-- Navigation Menu -->
+      <nav class="list">
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Ezi Updates</a></li>
+          <li><a href="#">Softwares</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    
+      <button class="anniversary-btn">16TH ANNIVERSARY</button>
+      <div class="search-container">
+        <button class="search-icon" onclick="toggleSearch()">
+          <img src="images/search.png" alt="Search Icon">
+        </button>
+        <div id="search-box" class="hidden">
+          <input type="text" placeholder="Search here..." class="search-input">
+          <button class="close-search" onclick="toggleSearch()">✖</button>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+
+  
+
+ 
+
+  <!-- ABOUT SECTION -->
+  <section class="about-eziline">
+    <div class="content">
+      <h1>About <span class="highlight">EZILINE</span></h1>
+      <ul class="info-list">
+        <li class="animated-item">Eziline is an independent Pakistan Based company</li>
+        <li class="animated-item">Operating Since 2007 – Eziline has been in profit since the beginning</li>
+        <li class="animated-item">We are website specialists (web design / dynamic web solutions / graphics design / Multimedia development)</li>
+        <li class="animated-item">A close-knit team of 350+ designers</li>
+        <li class="animated-item">Programmers</li>
+        <li class="animated-item">System analysts and marketing executives</li>
+      </ul>
+      
+    </div>
+
+      <div class="laptop-frame">
+        <img src="images/slider_frame.png" alt="Laptop Frame" class="laptop-image">
+      
+      </div>
+    
+  </section>
+  
+  <section class="project-management">
+    <div class="container">
+      <!-- iMac Frame with Mockup -->
+      <div class="imac-mockup">
+        <img src="images/MACCCCBOIK.png" alt="iMac Frame" class="imac-frame">
+        
+      </div>
+
+      <!-- Features Section -->
+      <div class="features">
+        <h2>OUR PROJECT MANAGEMENT</h2>
+        <ul class="feature-list">
+          <li> Project and Milestone tracking</li>
+          <li> Task management with SMS/email notification</li>
+          <li> 24/7 online service & Support</li>
+          <li> Billing/invoicing transparent management</li>
+          <li> Discussion board for project management</li>
+          <li> HR/Payroll & Complete office management</li>
+          <li> Cloud-based & Robust technology</li>
+        </ul>
+        <div class="buttons">
+          <button class="btn staff">STAFF</button>
+          <button class="btn intern">INTERN</button>
+          <button class="btn client">CLIENT</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="container">
+      <!-- Left Column - 3 Services -->
+      <div class="left-column">
+        <div class="service">
+          <div class="icon">
+            <img src="images/website-development-thegem-person-80.png" alt="Website Development">
+          </div>
+          <h3>WEBSITE DEVELOPMENT</h3>
+          <p>Developing a website is fun and anyone can do this but very few understand how to build websites.</p>
+        </div>
+  
+        <div class="service">
+          <div class="icon">
+            <img src="images/web-app-thegem-person-80.png" alt="Web App Development">
+          </div>
+          <h3>WEB APP DEVELOPMENT</h3>
+          <p>Web applications have been changing the ways of business operates across the globe.</p>
+        </div>
+  
+        <div class="service">
+          <div class="icon">
+            <img src="images/mobile-development-thegem-person-80.png" alt="Mobile App Development">
+          </div>
+          <h3>MOBILE APP DEVELOPMENT</h3>
+          <p>In this modern era, businesses should not ignore to have a business mobile app.</p>
+        </div>
+      </div>
+  
+      <!-- Center Column - Mobile Mockup -->
+      <div class="phone">
+        <img src="images/eziline-device-removebg-preview.png" alt="Phone Mockup" />
+      </div>
+  
+      <!-- Right Column - 3 Services -->
+      <div class="right-column">
+        <div class="service">
+          <div class="icon">
+            <img src="images/cloud-2-thegem-person-80.png" alt="Cloud Services">
+          </div>
+          <h3>CLOUD SERVICES</h3>
+          <p>Modernize your workflow and improve your application's performance by migrating to the Cloud.</p>
+        </div>
+  
+        <div class="service">
+          <div class="icon">
+            <img src="images/digital2-thegem-person-80.png" alt="Digital Marketing">
+          </div>
+          <h3>DIGITAL MARKETING</h3>
+          <p>Are you looking for ways to make your pitch inspirational to a social media audience?</p>
+        </div>
+  
+        <div class="service">
+          <div class="icon">
+            <img src="images/startup-thegem-person-80.png" alt="Startup Solutions">
+          </div>
+          <h3>STARTUP SOLUTIONS</h3>
+          <p>We help entrepreneurs turn their vision into reality and guide them throughout their business lifecycle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="sdlc-section">
+    <div class="content1">
+      <h1 class="sd">
+        <span class="highlight1">SOFTWARE</span> DEV LIFE CYCLE
+      </h1>
+      <p>We use Agile / Scrum methodology</p>
+    </div>
+
+    <div class="animation-area">
+      <div class="circle-step" id="designing">DESIGNING</div>
+      <div class="circle-step" id="planning">PLANNING</div>
+      <div class="circle-step" id="defining">DEFINING</div>
+      <div class="circle-step" id="building">BUILDING</div>
+      <div class="circle-step" id="testing">TESTING</div>
+      <div class="circle-step" id="deployment">DEPLOYMENT</div>
+      <div class="sdlc-tag">SDLC</div>
+    </div>
+  </section>
+  
+
+  <section class="features-section">
+    <div class="feature" onclick="cycleColors(this)">
+      <div class="icon">
+        <img src="images/inflation_17438054.png" alt="Flexible Price">
+      </div>
+      <h3>FLEXIBLE PRICE</h3>
+      <p>Our pricing plan is created by our clients. Market Competitive.</p>
+    </div>
+  
+    <div class="feature" onclick="cycleColors(this)">
+      <div class="icon">
+        <img src="images/time-management_17399817.png" alt="Quality Work">
+      </div>
+      <h3>QUALITY WORK</h3>
+      <p>Quality assurance & testing before every project delivery.</p>
+    </div>
+  
+    <div class="feature" onclick="cycleColors(this)">
+      <div class="icon">
+        <img src="images/fast-delivery_14602741.png" alt="Quick Delivery">
+      </div>
+      <h3>QUICK DELIVERY</h3>
+      <p>40 days initial delivery on custom mega projects.</p>
+    </div>
+  </section>
+  
+  
+  <div class="clients-carousel">
+    <h2>OUR CLIENTS</h2>
+    <div class="carousel-container">
+      <button class="carousel-control prev" onclick="moveCarousel(-1)">&#8249;</button>
+      <div class="carousel-track">
+        <img src="images/Artboard-3.png" alt="Arena Multimedia">
+        <img src="images/1314-13-1.png" alt="Hotel Red Line">
+        <img src="images/Artboard-3.png" alt="BNM Hospital">
+        <img src="images/Artboard-3-copy-11.png" alt="HHIRS">
+        <img src="images/Artboard-3-copy-12.png" alt="Asian Travel">
+        <img src="images/Artboard-3-copy-2.png" alt="CT Logo">
+        <img src="images/Artboard-3-copy-3.png" alt="Mirpur Education">
+        <img src="images/Artboard-3-copy-4.png" alt="Ezitech Institute">
+        <img src="images/Artboard-3-copy.png" alt="Ezitech Institute">
+      </div>
+      <button class="carousel-control next" onclick="moveCarousel(1)">&#8250;</button>
+    </div>
+  </div>
+  
+  
+  <footer>
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-about">
+        <h4>ABOUT</h4>
+        <p>
+          Tech House Having 100+ Quality Products and Innovations at national and international markets.
+          Rated as Best Software House in Region
+        </p>
+        <div class="about-icons">
+          <img src="images/ax (1).png" alt="PSEB">
+          <img src="images/gurrantee (1).png" alt="POSHA">
+        </div>
+      </div>
+
+      <!-- Recent Posts -->
+      <div class="footer-posts">
+        <h4>RECENT POSTS</h4>
+        <ul>
+          <li><a href="#">16th Anniversary - February 4, 2024</a></li>
+          <li><a href="#">Presidential Awards Won by Eziline Software House - February 20, 2023</a></li>
+          <li><a href="#">Eziline Exhibited at LEAP 2023 Saudi Arabia - February 7, 2023</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-contact">
+        <h4>CONTACT</h4>
+        <p><strong>PK Office:</strong> 304-G, Anna Plaza Pesh Rd Rawalpindi</p>
+        <p><strong>US Office:</strong> 16192 Coastal Highway Lewes, DE</p>
+        <p><strong>UK Office:</strong> Intl. House, 776-778 Barking Rd London</p>
+        <p><strong>FR Office:</strong> 5 avenue Pierre Sals 95500 Gonese Paris</p>
+        <p>Ph.: +92 51 5491184 / +92 51 8772888</p>
+        <p>Email: <a href="mailto:info@eziline.com">info@eziline.com</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>2022 © Copyrights Eziline Software House</p>
+      <div class="social-links">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="youtube.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+    
+</body>
+<script src="scripts.js"></script>
+</html>
