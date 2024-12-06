@@ -88,6 +88,181 @@ body, html {
     color: #ffffff;
     font-weight: bold;
   }
+  .menu-item {
+    position: relative;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #fff;
+    /* padding: 10px 20px; */
+    display: block;
+}
+
+.menu-link:hover {
+    background-color: #333;
+}
+
+.dropdown {
+    width: 600%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background-color: #fff;
+    display: none; /* Initially hidden */
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    border-bottom: 1px solid #ddd;
+    position: relative; /* For the left border effect */
+
+}
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    position: relative; /* For left-line styling */
+
+}
+.dropdown a:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px; /* Width of the left line */
+  height: 100%;
+  background-color: #007bff; /* Color of the left line */
+}
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+.menu-item:hover .dropdown {
+  display: block;
+}
+
+
+
+.menu-item1 {
+  position: relative;
+  margin-right: 20px;
+}
+
+.menu-link1 {
+  text-decoration: none;
+  color: #fff;
+  /* padding: 10px 15px; */
+  display: block;
+}
+
+.menu-link1:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* Dropdown Styles */
+.dropdown1 {
+  position: absolute;
+  top: 100%; /* Below the "Services" link */
+  left: 0;
+  display: none; /* Initially hidden */
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Adjust based on your design */
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.menu-item1:hover .dropdown1 {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next line if needed */
+  gap: 20px;
+}
+
+/* Category Items */
+.category-item1 {
+  display: flex;
+  align-items: center;
+  background-color: #fdf9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 180px; /* Adjust size */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.category-item1 img {
+  transition: 0.5s ease; /* Smooth transition */
+}
+
+.category-item1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* On hover, show the overlay */
+.category-item1:hover::after {
+  opacity: 0.5; /* Adjust for desired effect */
+}
+.category-icon1 {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.category-text1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Footer Images Section in Dropdown */
+.footer-images1 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.footer-item1 {
+  text-align: center;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.footer-item1 img {
+  width: 480px;
+  height: auto;
+}
+
+.footer-item1 p {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+}
   .menu-toggle {
     display: none;
     background: none;

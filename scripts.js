@@ -137,3 +137,12 @@ function toggleMenu() {
   const menu = document.querySelector('.menu-list');
   menu.classList.toggle('show'); // Toggle the "show" class to slide in/out
 }
+
+
+const menuItem = document.querySelector('.menu-item');
+
+menuItem.addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent default link behavior
+    const dropdown = this.querySelector('.dropdown');
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+});
